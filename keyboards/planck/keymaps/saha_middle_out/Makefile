@@ -1,0 +1,3 @@
+AUDIO_ENABLE = yes
+NKRO_ENABLE = yes
+#MIDI_ENABLE = yes
