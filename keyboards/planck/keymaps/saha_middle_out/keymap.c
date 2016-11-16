@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // Note to self: To load this onto the keyboard press the reset button on the back
 // navigate to the following in a terminal:
-//    .../qmk_firmware/keyboards/planck/keymaps/saha_middle_out
+//    .../qmk_firmware/keyboards/planck/
 // Then run the following commands:
 //    sudo make clean && sudo make KEYMAP=saha_middle_out dfu
 
@@ -54,17 +54,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 },
 
 [_SPECIAL] = {
-    {  KC_GRV,   KC_QUOT,  KC_LCBR,  KC_RCBR,  KC_PLUS,  KC_ESC,   /****/  KC_ESC,   KC_AMPR,  KC_HOME,  KC_UP,    KC_END,   KC_DQUO  },
-    {  KC_TAB,   KC_ASTR,  KC_LPRN,  KC_RPRN,  KC_EQL,   ___t___,  /****/  CMDENTR,  KC_EXLM,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_COLN  },//
-    {  KC_Z,     KC_X,     KC_LBRC,  KC_RBRC,  KC_MINS,  ___t___,  /****/  ___t___,  KC_PIPE,  KC_UNDS,  KC_LABK,  KC_RABK,  KC_BSLS  },
-    {  ___t___,  KC_LGUI,  KC_LALT,  KC_LCTL,  KC_SPC,   KC_LGUI,  /****/  KC_RSFT,  _______,  _______,  _______,  _______,  _______  }
+    {  KC_GRV,   KC_QUOT,  KC_LCBR,  KC_RCBR,  KC_PLUS,  KC_ESC,   /****/  KC_DELT,  KC_AMPR,  KC_HOME,  KC_UP,    KC_END,   KC_DQUO  },
+    {  KC_TAB,   KC_ASTR,  KC_LPRN,  KC_RPRN,  KC_EQL,   _______,  /****/  CMDENTR,  KC_EXLM,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_COLN  },
+    {  KC_Z,     KC_X,     KC_LBRC,  KC_RBRC,  KC_MINS,  KC_BSPC,  /****/  _______,  KC_PIPE,  KC_UNDS,  KC_LABK,  KC_RABK,  KC_BSLS  },
+    {  ___t___,  KC_LGUI,  KC_LALT,  KC_LCTL,  KC_SPC,   KC_LGUI,  /****/  KC_RSFT,  ___t___,  ___t___,  _______,  _______,  _______  }
 },
 
 [_NUMERIC] = {
-    {  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  ___t___,  /****/  ___t___,  KC_CIRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN  },
-    {  KC_1,     KC_2,     KC_3,     KC_4,        KC_5,  ___t___,  /****/  ___t___,  KC_6,     KC_7,     KC_8,     KC_9,     KC_0     },
-    {  _______,  _______,  _______,  _______,  _______,  ___t___,  /****/  ___t___,  KC_PIPE,  KC_UNDS,  KC_COMM,  KC_DOT,   KC_SLSH  },
-    {  ___t___,  KC_LGUI,  KC_LALT,  KC_LCTL,  KC_SPC,   KC_LGUI,  /****/  ___t___,  _______,  ___t___,  _______,  _______,  _______  }
+    {  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_ESC,   /****/  KC_DELT,  KC_CIRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN  },
+    {  KC_1,     KC_2,     KC_3,     KC_4,        KC_5,  _______,  /****/  KC_ENT,   KC_6,     KC_7,     KC_8,     KC_9,     KC_0     },
+    {  _______,  _______,  _______,  _______,  _______,  KC_BSPC,  /****/  _______,  KC_PIPE,  KC_UNDS,  KC_COMM,  KC_DOT,   KC_SLSH  },
+    {  ___t___,  KC_LGUI,  KC_LALT,  KC_LCTL,  KC_SPC,   KC_LGUI,  /****/  KC_RSFT,  _______,  _______,  _______,  _______,  _______  }
 }
 
 };
